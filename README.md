@@ -4,6 +4,7 @@
 automated process ......
 better push yourself .....
 wonderful ting
+God help me
 
 # Jenkins Complete CI/CD Pipeline Environment Setup 
 
