@@ -61,7 +61,7 @@ pipeline {
 
         stage('SonarQube scanning') {
             steps {
-                withSonarQubeEnv('SonarQube') {
+              
                     withCredentials([string(credentialsId: 'sonarqube-token', variable: 'SONAR_TOKEN')]) {
                         sh """
                     mvn sonar:sonar \
@@ -70,14 +70,10 @@ pipeline {
                     -Dsonar.login=$SONAR_TOKEN
                     """
                     }
-                }
+                
             }
         }
-         stage('Quality Gate') {
-            steps {
-                waitForQualityGate abortPipeline: true
-            }
-        }
+        
 
     
 
