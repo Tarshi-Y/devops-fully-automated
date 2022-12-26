@@ -62,7 +62,7 @@ pipeline {
         stage('SonarQube scanning') {
             steps {
                 withSonarQubeEnv('SonarQube') {
-                    withCredentials([string(credentialsId: 'sonarqube-token', variable: 'SONAR_TOKEN')]) {
+                    withCredentials([string(credentialsId: 'sonarqube-token', variable: '86E1FA4D-AYUzKvCW0ULJT6F3MHQi')]) {
                         sh """
                    mvn sonar:sonar \
                  -Dsonar.projectKey=JavaProject \
