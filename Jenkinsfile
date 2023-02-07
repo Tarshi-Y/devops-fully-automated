@@ -67,7 +67,7 @@ pipeline {
                    mvn sonar:sonar \
                  -Dsonar.projectKey=JavaProject \
                  -Dsonar.host.url=http://172.31.80.80:9000 \
-                 -Dsonar.login=74d3ccfeb3d6f829ba883213d04385f3891621f6
+                 -Dsonar.login=efcc9eb918173f4cea20288e37137e1b7625a4de
                     """
                     }
                 }
