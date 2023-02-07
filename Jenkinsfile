@@ -12,7 +12,7 @@ pipeline {
 
     tools {
         maven 'localMaven'
-        jdk 'openjdk-11'
+        jdk 'localJdk'
     }
 
     stages {
